@@ -1,6 +1,6 @@
 
 # Audit Service
-This service is responsible for storing all the audit logs of our different services.
+This service is responsible for storing all the audit logs generated from different microservices.
 
 
 
