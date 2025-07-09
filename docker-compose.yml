@@ -1,0 +1,18 @@
+services:
+  supertruck_audit_trail_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DATABASE_HOST=localhost  
+      - DATABASE_PORT=5432
+      - DATABASE_USER=testuser
+      - DATABASE_PASSWORD=testpassword
+      - DATABASE_NAME=nestjs_project_template_db
+      - REDIS_HOST=host.docker.internal
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=
+    volumes:
+      - ./src:/usr/src/app/src
+    network_mode: host
+
